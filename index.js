@@ -29,7 +29,7 @@ fetch('data.json')
     
       // Get all the selected checkbox values
       const checkboxes = $('#shoppingListForm input[type="checkbox"]:checked');
-      const selectedItems = Array.from(checkboxes).map((checkbox) => checkbox.value);
+      const selectedItems = Array.from(checkboxes).map((checkbox) => checkbox.name);
     
       // Prepare the email body with the selected items
       const emailBody = selectedItems.join(", ");
@@ -44,6 +44,7 @@ fetch('data.json')
       console.log(`Sending email to ${recipient}`);
       console.log(`Subject: ${subject}`);
       console.log(`Body: ${body}`);
+      alert("Items: "+ `${body}`);
     }
     
   })
