@@ -13,8 +13,9 @@
         width: 100%;
     }
     input[type="checkbox"] {
-        width: 15px;
-        height: 15px;
+        width: 2vw;
+        height: 2vh;
+        margin: 0 10px;
     }
     @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
     @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
@@ -25,6 +26,12 @@
             width: 100%;
             margin: auto;
         } 
+        input[type="checkbox"] {
+            transform: scale(2);
+        }
+        table.itemsData{
+            font-size: 30px;
+        }
     }
     @media (min-width:1025px) { 
         /* big landscape tablets, laptops, and desktops */ 
@@ -39,6 +46,9 @@
             width: 50%;
             margin: auto;
         } 
+    }
+    input[type="submit"]{
+        margin: 10px;
     }
 </style>
 
