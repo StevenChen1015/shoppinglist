@@ -1,7 +1,6 @@
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="jquery-3.6.4.min.js"></script>
     <script src="index.js"></script>
 </head>
 
@@ -9,8 +8,8 @@
     <h1>温哥华 | 落叶安家 | 购物清单</h1>
     <div class="wrapper">
         <div class="shoppingList">
-            <button type="submit">提交</button>
-            <form id="shoppingListForm">
+            <input type="submit">提交</input>
+            <form id="shoppingListForm" action="POST">
                 <table id="itemsData" border="2">
                     <thead>
                         <th>项目类别</th>
@@ -20,7 +19,7 @@
                     <tbody>
                     </tbody>
                 </table>
-                <button type="submit">提交</button>
+                <input type="submit" value="submit">提交</input>
             </form>
         </div>
     </div>

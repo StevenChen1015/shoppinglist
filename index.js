@@ -24,11 +24,11 @@ fetch('data.json')
 
   $(document).ready(function () {
 
-    document.getElementById("shoppingListForm").addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the form from submitting normally
+    $("#shoppingListForm").submit(function(e){
+      e.preventDefault(); // Prevent the form from submitting normally
     
       // Get all the selected checkbox values
-      const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      const checkboxes = $('#shoppingListForm input[type="checkbox"]:checked');
       const selectedItems = Array.from(checkboxes).map((checkbox) => checkbox.value);
     
       // Prepare the email body with the selected items
