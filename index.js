@@ -11,6 +11,7 @@ fetch('data.json')
           <td>${index === 0 ? type : ''}</td>
           <td>${item.name}</td>
           <td>${item.description}</td>
+          <td><input type="checkbox" name="${item.name}" />&nbsp;</td>
         `;
         tableBody.appendChild(row);
       });
