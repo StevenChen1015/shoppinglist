@@ -97,7 +97,7 @@
                 "description": ""
             },
             {
-                "name": "大集装箱",
+                "name": "大纸箱",
                 "description": "用于存放季节性物品"
             },
             {
@@ -143,6 +143,10 @@
             },
             {
                 "name": "洗碗机洗涤剂",
+                "description": ""
+            },
+            {
+                "name": "垃圾桶",
                 "description": "室内的"
             },
             {
@@ -150,12 +154,8 @@
                 "description": "户外的"
             },
             {
-                "name": "垃圾桶",
-                "description": "纸+容器"
-            },
-            {
                 "name": "回收箱",
-                "description": ""
+                "description": "纸+容器"
             },
             {
                 "name": "衣架",
