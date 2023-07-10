@@ -54,7 +54,9 @@
                 name: "剪刀",
                 description: ""
             }
-        ],
+        ]
+    },
+    {
         type: "床上用品和床单",
         items: [
             {
@@ -81,7 +83,9 @@
                 name: "淋浴毛巾",
                 description: ""
             }
-        ],
+        ]
+    },
+    {
         type: "收纳盒",
         items: [
             {
@@ -101,7 +105,9 @@
                 description: "搬家箱子"
             },
             
-        ],
+        ]   
+    },
+    {
         type: "厨具",
         items: [
             {
@@ -165,7 +171,9 @@
                 description: ""
             }
             
-        ],
+        ]
+    },
+    {
         type: "电子产品",
         items: [
             {
@@ -181,7 +189,9 @@
                 description: ""
             },
             
-        ],
+        ]   
+    },
+    {
         type: "个人物品",
         items: [
             {
@@ -236,7 +246,10 @@
                 name: "瓶装水",
                 description: ""
             }
-        ],
+        ]
+    
+    },
+    {
         type: "女生用品",
         items: [
             {
@@ -248,7 +261,10 @@
                 description: ""
             },
             
-        ],
+        ]
+    
+    },
+    {
         type: "男士用品",
         items: [
             {
@@ -256,7 +272,10 @@
                 description: ""
             },
             
-        ],
+        ]
+        
+    },
+    {
         type: "儿童用品",
         items: [
             {
