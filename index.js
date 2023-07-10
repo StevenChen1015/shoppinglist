@@ -20,3 +20,30 @@ fetch('data.json')
   .catch(error => {
     console.error('Error fetching data:', error);
   });
+
+
+  $(document).ready(function () {
+
+    document.getElementById("shoppingListForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+    
+      // Get all the selected checkbox values
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      const selectedItems = Array.from(checkboxes).map((checkbox) => checkbox.value);
+    
+      // Prepare the email body with the selected items
+      const emailBody = selectedItems.join(", ");
+    
+      // Send the email (implementation depends on your email sending mechanism)
+      sendEmail("recipient@example.com", "Selected Items", emailBody);
+    });
+    
+    function sendEmail(recipient, subject, body) {
+      // Use your preferred method to send the email, such as an API call or an email library
+      // This is just a placeholder function for demonstration purposes
+      console.log(`Sending email to ${recipient}`);
+      console.log(`Subject: ${subject}`);
+      console.log(`Body: ${body}`);
+    }
+    
+  })
