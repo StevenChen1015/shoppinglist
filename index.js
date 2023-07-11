@@ -41,10 +41,21 @@ fetch('data.json')
     function sendEmail(recipient, subject, body) {
       // Use your preferred method to send the email, such as an API call or an email library
       // This is just a placeholder function for demonstration purposes
-      console.log(`Sending email to ${recipient}`);
-      console.log(`Subject: ${subject}`);
-      console.log(`Body: ${body}`);
-      alert("Items: "+ `${body}`);
+      // console.log(`Sending email to ${recipient}`);
+      // console.log(`Subject: ${subject}`);
+      // console.log(`Body: ${body}`);
+      // alert("Items: "+ `${body}`);
+
+      emailjs.init('NX8PoHU8ScQ0LHE5B');
+
+      let params = {
+        from_name: "User",
+        message: subject,
+        email_body: body
+      }
+      emailjs.send("service_i664784", "template_debf5uj", params).then(function (res) {
+        alert("Success!")
+      })
     }
     
   })
